@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania Digital — Direitos e Segurança na Rede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra Superior de Acessibilidade (Padrões de IHC e UX) -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="logo">🛡️ Cidadania<span>Digital</span></div>
+            
+            <!-- Botões Simplificados com Ícones (Conforme atualização da interface) -->
+            <div class="accessibility-controls">
+                <button class="btn-icon" onclick="alterarFonte('mais')" title="Aumentar Texto">A+</button>
+                <button class="btn-icon" onclick="alterarFonte('menos')" title="Diminuir Texto">A-</button>
+                <button class="btn-icon btn-audio" onclick="lerEmVozAlta()" title="Ouvir Página / Pausar">🔊 Ouvir Página</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal que o Leitor de Tela irá ler automaticamente -->
+    <main>
+        
+        <!-- Seção de Boas-Vindas (Hero) -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1 class="txt-ajustavel">Quem protege você no ambiente digital?</h1>
+                <p class="txt-ajustavel">A internet pode ser um espaço confuso e cheio de armadilhas. Conhecer as leis e os seus direitos fundamentais é o primeiro passo para navegar com total segurança, privacidade e autonomia.</p>
+            </div>
+        </section>
+
+        <!-- Seção Sinais de Fraude (Cards Verticais Alongados e Responsivos para Celular) -->
+        <section id="golpes" class="section-padding">
+            <div class="container">
+                <h2 class="section-title txt-ajustavel">Sinais de uma Fraude</h2>
+                <p class="section-subtitle txt-ajustavel">Mensagens cotidianas são desenhadas por criminosos para explorar a nossa pressa, curiosidade ou medo. Fique atento a estes exemplos:</p>
+                
+                <div class="grid-cards">
+                    <div class="card warning-card">
+                        <div class="card-icon">🚨</div>
+                        <h3 class="txt-ajustavel">O Falso Cancelamento</h3>
+                        <p class="card-text txt-ajustavel">"Sua compra de R$ 53.000 foi aprovada. Se você não reconhece, clique no link abaixo para cancelar."</p>
+                        <span class="badge">Perigo: Phishing</span>
+                    </div>
+
+                    <div class="card warning-card">
+                        <div class="card-icon">💰</div>
+                        <h3 class="txt-ajustavel">A Falsa Premiação</h3>
+                        <p class="card-text txt-ajustavel">"Parabéns! Você ganhou R$ 2.000 no Pix da nossa instituição. Resgate clicando no link agora."</p>
+                        <span class="badge">Perigo: Roubo de Dados</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Legislação (O Escudo do Usuário) -->
+        <section id="leis" class="bg-light section-padding">
+            <div class="container">
+                <h2 class="section-title txt-ajustavel">O Escudo Legal do Cidadão</h2>
+                <div class="laws-timeline">
+                    
+                    <div class="law-item">
+                        <div class="law-number">01</div>
+                        <div class="law-details">
+                            <h3 class="txt-ajustavel">LGPD (Lei Geral de Proteção de Dados)</h3>
+                            <p class="txt-ajustavel">Regula como as empresas usam suas informações pessoais. Garante que você tenha o controle total sobre quais dados fornece e o direito de exigir a exclusão deles a qualquer momento.</p>
+                        </div>
+                    </div>
+
+                    <div class="law-item">
+                        <div class="law-number">02</div>
+                        <div class="law-details">
+                            <h3 class="txt-ajustavel">Marco Civil da Internet</h3>
+                            <p class="txt-ajustavel">É a "Constituição" da rede no Brasil. Protege a privacidade das suas mensagens pessoais e impede que as operadoras de internet diminuam a velocidade da sua conexão sem motivo.</p>
+                        </div>
+                    </div>
+
+                    <div class="law-item">
+                        <div class="law-number">03</div>
+                        <div class="law-details">
+                            <h3 class="txt-ajustavel">Código de Defesa do Consumidor</h3>
+                            <p class="txt-ajustavel">Totalmente aplicado às compras online. Garante o importante <strong>Direito de Arrependimento</strong>: você tem até 7 dias após o produto chegar para desistir da compra e receber todo o seu dinheiro de volta.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Rodapé Semântico Correto -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Cidadania Digital. Desenvolvido para a plataforma Start. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
